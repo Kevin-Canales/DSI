@@ -1,0 +1,29 @@
+{
+  "kind": "collectionType",
+  "collectionName": "asignaturas",
+  "info": {
+    "singularName": "asignatura",
+    "pluralName": "asignaturas",
+    "displayName": "Asignatura"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "NombreAsignatura": {
+      "type": "string"
+    },
+    "NumeroCreditos": {
+      "type": "integer",
+      "required": true,
+      "min": 1,
+      "max": 4
+    },
+    "NumerodeSemestre": {
+      "type": "integer",
+      "min": 1,
+      "max": 10
+    }
+  }
+}
